@@ -1,7 +1,6 @@
 // src/App.js
 
 import React from 'react';
-import axios from 'axios';
 import './App.css';
 import GitHubActionsTrigger from './GitHubActionsTrigger';
 import ArtifactViewer from './ArtifactViewer'; // Import the new component
