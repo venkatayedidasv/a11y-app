@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+// src/App.js
+
+import React from 'react';
+import axios from 'axios';
 import './App.css';
+import GitHubActionsTrigger from './GitHubActionsTrigger';
+import ArtifactViewer from './ArtifactViewer'; // Import the new component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Test your website for Accessibility issues in one click</h1>
+      <GitHubActionsTrigger />
+      <ArtifactViewer /> {/* Add the new component here */}
     </div>
   );
 }
